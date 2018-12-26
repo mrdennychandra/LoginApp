@@ -2,7 +2,7 @@
     <string name="app_name">LoginApp</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="title_home">Home</string>
-    <string name="title_notification">Notifikasi</string>
+    <string name="title_divisi">Divisi</string>
     <string name="title_profile">Profile</string>
 
     <!-- TODO: Remove or change this placeholder text -->
