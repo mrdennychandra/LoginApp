@@ -12,11 +12,10 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 import id.go.bpkp.loginapp.fragment.HomeFragment;
-import id.go.bpkp.loginapp.fragment.NotificationFragment;
-import id.go.bpkp.loginapp.fragment.ProfileFragment;
+import id.go.bpkp.loginapp.fragment.DivisiFragment;
+import id.go.bpkp.loginapp.fragment.NewsFragment;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -43,11 +42,11 @@ public class HomeActivity extends AppCompatActivity {
                 case R.id.navigation_home:
                     loadFragment(new HomeFragment());
                     return true;
-                case R.id.navigation_dashboard:
-                    loadFragment(new NotificationFragment());
+                case R.id.navigation_divisi:
+                    loadFragment(new DivisiFragment());
                     return true;
-                case R.id.navigation_notifications:
-                    loadFragment(new ProfileFragment());
+                case R.id.navigation_news:
+                    loadFragment(new NewsFragment());
                     return true;
             }
             return false;

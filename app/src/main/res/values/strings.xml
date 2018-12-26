@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">LoginApp</string>
-    <string name="title_activity_home">HomeActivity</string>
+    <string name="app_name">Mobile SDM</string>
+    <string name="title_activity_home">Mobile SDM</string>
     <string name="title_home">Home</string>
     <string name="title_divisi">Divisi</string>
-    <string name="title_profile">Profile</string>
+    <string name="title_news">News</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
