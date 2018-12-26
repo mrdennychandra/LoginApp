@@ -8,16 +8,4 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="button_style">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textStyle">bold</item>
-        <item name="bootstrapBrand">primary</item>
-        <item name="bootstrapSize">lg</item>
-        <item name="showOutline">true</item>
-        <item name="roundedCorners">true</item>
-        <item name="android:radius">16dp</item>
-        <item name="android:background">@drawable/frame</item>
-        <item name="android:textColor">@color/bootstrap_gray_lightest</item>
-    </style>
 </resources>
