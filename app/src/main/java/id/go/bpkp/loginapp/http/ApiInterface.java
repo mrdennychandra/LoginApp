@@ -15,6 +15,7 @@ import retrofit2.http.Multipart;
 import retrofit2.http.POST;
 import retrofit2.http.Part;
 import retrofit2.http.Path;
+import retrofit2.http.Url;
 
 public interface ApiInterface {
 
@@ -52,5 +53,9 @@ public interface ApiInterface {
 
     @FormUrlEncoded
     @POST("Login/login")
-    Call<User> login(@Field("identity") String username, @Field("password") String password);
+    Call<User> login(@Field("identity") String username,
+                     @Field("password") String password);
+
+    @GET
+    Call<String> getData(@Url String url);
 }
