@@ -13,9 +13,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.util.concurrent.TimeUnit;
+
+import androidx.work.PeriodicWorkRequest;
+import androidx.work.WorkManager;
 import id.go.bpkp.loginapp.fragment.DivisiFragment;
 import id.go.bpkp.loginapp.fragment.HomeFragment;
 import id.go.bpkp.loginapp.fragment.NewsFragment;
+import id.go.bpkp.loginapp.fragment.NoteFragment;
+import id.go.bpkp.loginapp.scheduling.SyncWorker;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -47,6 +53,9 @@ public class HomeActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_news:
                     loadFragment(new NewsFragment());
+                    return true;
+                case R.id.navigation_note:
+                    loadFragment(new NoteFragment());
                     return true;
             }
             return false;

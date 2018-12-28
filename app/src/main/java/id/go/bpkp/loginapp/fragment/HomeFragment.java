@@ -1,6 +1,7 @@
 package id.go.bpkp.loginapp.fragment;
 
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
@@ -18,6 +19,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import id.go.bpkp.loginapp.FormKaryawanActivity;
+import id.go.bpkp.loginapp.MainActivity;
 import id.go.bpkp.loginapp.R;
 import id.go.bpkp.loginapp.adapter.KaryawanAdapter;
 import id.go.bpkp.loginapp.http.ApiInterface;
@@ -55,8 +58,8 @@ public class HomeFragment extends Fragment {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Intent intent = new Intent(MainActivity.this,FormKaryawanActivity.class);
-                //startActivity(intent);
+                Intent intent = new Intent(getActivity(),FormKaryawanActivity.class);
+                startActivity(intent);
             }
         });
 

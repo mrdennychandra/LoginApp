@@ -18,8 +18,11 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 
 import java.util.List;
+import java.util.concurrent.ExecutorService;
 
+import id.go.bpkp.loginapp.FormKaryawanActivity;
 import id.go.bpkp.loginapp.R;
+import id.go.bpkp.loginapp.database.NotesDao;
 import id.go.bpkp.loginapp.http.ApiInterface;
 import id.go.bpkp.loginapp.http.RestClient;
 import id.go.bpkp.loginapp.model.Karyawan;
@@ -61,9 +64,9 @@ public class KaryawanAdapter extends RecyclerView.Adapter<KaryawanAdapter.ViewHo
         viewHolder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Intent intent = new Intent(context,FormKaryawanActivity.class);
-                // intent.putExtra("karyawan",karyawan);
-                // context.startActivity(intent);
+                Intent intent = new Intent(context,FormKaryawanActivity.class);
+                 intent.putExtra("karyawan",karyawan);
+                context.startActivity(intent);
             }
         });
         viewHolder.btnDelete.setOnClickListener(new View.OnClickListener() {
@@ -77,6 +80,7 @@ public class KaryawanAdapter extends RecyclerView.Adapter<KaryawanAdapter.ViewHo
                             @Override
                             public void onClick(DialogInterface dialog,
                                                 int which) {
+                                karyawans.remove(karyawan);
                                 delete(karyawan.id);
                             }
                         });

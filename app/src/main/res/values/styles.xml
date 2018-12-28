@@ -24,7 +24,8 @@
         <item name="android:layout_margin">1dp</item>
         <item name="android:textSize">12sp</item>
         <item name="android:padding">1dp</item>
-        <item name="android:color">#83010e</item>
+        <item name="android:textColor">@color/bootstrap_gray_lightest</item>
+        <item name="android:background">@color/bootstrap_brand_danger</item>
     </style>
 
     <style name="SuccessButton" parent="@android:style/Widget.Button.Small">
@@ -34,6 +35,18 @@
         <item name="android:layout_margin">1dp</item>
         <item name="android:textSize">12sp</item>
         <item name="android:padding">1dp</item>
-        <item name="android:color">@color/bootstrap_brand_success</item>
+        <item name="android:textColor">@color/bootstrap_gray_lightest</item>
+        <item name="android:background">@color/bootstrap_brand_success</item>
+    </style>
+
+    <style name="WarningButton" parent="@android:style/Widget.Button.Small">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:textColor">@color/bootstrap_gray_lightest</item>
+        <item name="android:background">@color/bootstrap_brand_warning</item>
     </style>
 </resources>
